@@ -1,10 +1,10 @@
 import tkinter as tk
 
-from thinter import ttk
+from tkinter import ttk
 
 root = tk.Tk()              # Main Window
 
-ttk.label( root, text="Nazdar Radenko !" ).pack()
+ttk.Label( root, text="Nazdar Radenko !", padding=(30,10) ).pack()
 
 root.mainloop()
 
