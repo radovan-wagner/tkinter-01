@@ -5,11 +5,20 @@ from tkinter import ttk
 def greet():
     print( f"Hello {user_name.get() or 'World' } !" )
 
+
 def okbutton():
     print( "Ok !" )
 
 
 root = tk.Tk()
+root.geometry("600x400")
+
+rectangle_1 = tk.Label( root, text="Rectangle 1", bg="green", fg="white")
+rectangle_1.pack( ipadx=10, ipady=10, fill="y", expand=True )
+
+rectangle_2 = tk.Label( root, text="Rectangle 2", bg="red", fg="white")
+rectangle_2.pack( ipadx=10, ipady=10 )
+
 user_name = tk.StringVar()# Main Window
 
 ttk.Label( root, text="Nazdar Radenko !", padding=(30,10) ).pack()
